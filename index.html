@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Merouane | Consultant & Formateur</title>
+  <meta charset="UTF-8">
+  <title>Nos Formations & Services</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #2c3e50;
     }
 
     header {
-      background: #0f172a;
+      background: #0e86ad;
       color: #fff;
       padding: 60px 20px;
       text-align: center;
@@ -24,60 +22,62 @@
       margin: 0;
       font-size: 2.5rem;
     }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
-
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    h2 {
+h2 {
       color: #0f172a;
       margin-bottom: 10px;
       border-bottom: 2px solid #0f172a22;
       display: inline-block;
       padding-bottom: 5px;
     }
-
-    .services ul {
+    ul {
       list-style: none;
-      padding: 0;
+      padding-left: 0;
     }
 
-    .services li {
-      background: #e2e8f0;
-      margin: 10px 0;
-      padding: 15px;
-      border-radius: 8px;
-    }
-
-    footer {
-      text-align: center;
+    li {
+      margin-bottom: 30px;
       padding: 20px;
-      background: #e2e8f0;
-      margin-top: 40px;
-      font-size: 0.9rem;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
+    li > strong {
+      display: block;
+      font-size: 22px;
+      background: linear-gradient(to right, #3498db, #b2d4eb);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    }
 
-      section {
-        margin: 20px auto;
-      }
+    .paragraphe-cliquable {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 10px 0;
+      color: #2980b9;
+      transition: color 0.3s;
+    }
+
+    .paragraphe-cliquable:hover {
+      color: #e67e22;
+    }
+
+    .texte-affichable {
+      display: none;
+      margin: 5px 0 15px 0;
+      padding-left: 10px;
+      border-left: 3px solid #3498db;
+      color: #333;
     }
   </style>
 </head>
 <body>
 
-  <header>
+<header>
     <h1>Merouane Tchikaoui</h1>
     <p>Consultant en cybersécurité & gestion de projet · Formateur certifié PECB</p>
   </header>
@@ -126,78 +126,111 @@
 </section>
 
 
-  <section class="services">
-  <h2>Mes services</h2>
+<ul>
+	<li>
+		<strong>Prestations</strong>
+		<p class="paragraphe-cliquable">Implémentation de SMSI conformes à ISO/IEC 27001</p>
+		<div class="texte-affichable">Appui à la conception et au déploiement de systèmes de management de la sécurité de l’information selon les exigences de la norme ISO/IEC 27001.</div>
+		<p class="paragraphe-cliquable">Évaluation et traitement des risques selon ISO/IEC 27005</p>
+		<div class="texte-affichable">Identification, analyse et traitement des risques en s’appuyant sur la méthodologie de la norme ISO/IEC 27005.</div>
+		<p class="paragraphe-cliquable">Audit de sécurité (interne / pré-certification ISO 27001)</p>
+		<div class="texte-affichable">Audit de maturité, audits internes ou pré-certification pour s’assurer de la conformité du SMSI avant la certification.</div>
+		<p class="paragraphe-cliquable">Mise en conformité réglementaire</p>
+		<div class="texte-affichable">Analyse de l’environnement réglementaire et accompagnement dans la mise en conformité (loi 18-07, législation cybersécurité).</div>
+		<p class="paragraphe-cliquable">Accompagnement à la certification ISO/IEC 27001</p>
+		<div class="texte-affichable">Pilotage des actions de préparation et accompagnement jusqu’à la réussite de l’audit de certification ISO/IEC 27001.</div>
+		<p class="paragraphe-cliquable">Gestion de projets IT (cycle en V, Agile, hybride)</p>
+		<div class="texte-affichable">Pilotage de projets informatiques selon les approches classiques, agiles ou hybrides, en fonction du contexte et des besoins métiers.</div>
+		<p class="paragraphe-cliquable">Digitalisation des processus et stratégie Zéro Papier</p>
+		<div class="texte-affichable">Étude, cartographie et digitalisation des processus pour optimiser les flux, réduire les coûts et améliorer la traçabilité documentaire.</div>
+		<p class="paragraphe-cliquable">Conduite du changement et coaching Agile</p>
+		<div class="texte-affichable">Soutien à l’adoption des nouveaux outils, processus ou postures organisationnelles, avec accompagnement des équipes terrain.</div>
+		<p class="paragraphe-cliquable">Élaboration de schémas directeurs & feuille de route IT</p>
+		<div class="texte-affichable">Définition d’une vision stratégique IT, alignée avec les priorités métiers, et déclinaison opérationnelle en plan d’action.</div>
+		<p class="paragraphe-cliquable">Implémentation de solutions GED, ERP, infrastructure hyperconvergée</p>
+		<div class="texte-affichable">Sélection, mise en œuvre et accompagnement au déploiement de solutions numériques complexes à forte valeur ajoutée.</div>
+		<p class="paragraphe-cliquable">Conseil stratégique et cadrage IA</p>
+		<div class="texte-affichable">Accompagnement à l’identification des cas d’usage IA dans l’entreprise, analyse des processus métiers, priorisation des besoins et élaboration de la feuille de route IA.</div>
+		<p class="paragraphe-cliquable">Déploiement, gouvernance et conduite du changement IA</p>
+		<div class="texte-affichable">Implémentation d’outils IA (ChatGPT, Copilot…), adaptation aux métiers, gouvernance éthique et réglementaire, sensibilisation des équipes et pilotage de l’adoption.</div>
+  </li>
+	<li>
+		<strong>Formations en intégration de l’IA en entreprise</strong>
+		<p class="paragraphe-cliquable">Introduction à l’intelligence artificielle pour les entreprises</p>
+		<div class="texte-affichable">Panorama des technologies IA, cas d’usage concrets par secteur d’activité, limites actuelles et perspectives futures.</div>
+		<p class="paragraphe-cliquable">Cartographie des processus métiers éligibles à l’automatisation IA</p>
+		<div class="texte-affichable">Identification des tâches répétitives et des flux exploitables, analyse d’opportunité IA et priorisation des cas d’usage internes.</div>
+		<p class="paragraphe-cliquable">Déploiement d’outils IA (ex : ChatGPT, Copilot, assistants métiers)</p>
+		<div class="texte-affichable">Méthodologie d’intégration des outils IA dans les processus métiers : configuration, formation utilisateurs et pilotage de l’adoption.</div>
+		<p class="paragraphe-cliquable">Éthique, biais et gouvernance de l’intelligence artificielle</p>
+		<div class="texte-affichable">Sensibilisation aux risques éthiques, biais algorithmiques, transparence, auditabilité et mise en place d’un cadre de gouvernance responsable.</div>
+		<p class="paragraphe-cliquable">Conduite du changement pour intégrer l’IA</p>
+		<div class="texte-affichable">Préparer les équipes à l’acceptation de l’IA, lever les freins psychologiques et organisationnels, mettre en place une démarche collaborative et agile.</div>
+	  </li>
+  <li>
+    <strong>Formations ISO/IEC 27001, 27005 et SMSI</strong>
+    <p class="paragraphe-cliquable">Introduction à la norme et principes du SMSI</p>
+    <div class="texte-affichable">Présentation générale de la norme ISO/IEC 27001, ses objectifs, sa structure et les principes fondamentaux du système de management de la sécurité de l’information (SMSI).</div>
+    <p class="paragraphe-cliquable">Implémentation d’un SMSI (Lead Implementer)</p>
+    <div class="texte-affichable">Formation pratique sur la mise en œuvre d’un SMSI conforme à ISO/IEC 27001 : planification, mise en place, suivi et amélioration continue.</div>
+    <p class="paragraphe-cliquable">Audit d’un SMSI (Lead Auditor)</p>
+    <div class="texte-affichable">Méthodologie et outils pour conduire des audits internes ou de certification selon ISO/IEC 27001, en se conformant aux lignes directrices ISO 19011.</div>
+    <p class="paragraphe-cliquable">Gestion des risques liés à la sécurité de l'information (ISO/IEC 27005)</p>
+    <div class="texte-affichable">Approche structurée pour l’identification, l’évaluation et le traitement des risques de sécurité conformément à ISO/IEC 27005.</div>
+    <p class="paragraphe-cliquable">Préparation à la certification ISO/IEC 27001 Lead Implementer</p>
+    <div class="texte-affichable">Formation complète pour maîtriser les compétences requises afin de réussir l’examen de certification ISO/IEC 27001 Lead Implementer.</div>
+    <p class="paragraphe-cliquable">Préparation à la certification ISO/IEC 27001 Lead Auditor</p>
+    <div class="texte-affichable">Parcours structuré pour acquérir les aptitudes nécessaires à la réussite de l’examen ISO/IEC 27001 Lead Auditor, avec cas pratiques et examens blancs.</div>
+    <p class="paragraphe-cliquable">Préparation à la certification ISO/IEC 27005 Risk Manager</p>
+    <div class="texte-affichable">Formation orientée compétences pour maîtriser les exigences de l’examen ISO/IEC 27005 Risk Manager : concepts clés, analyse et traitement des risques.</div>
+    <p class="paragraphe-cliquable">Intégration ISO 27001 / ISO 9001 / ISO 22301</p>
+    <div class="texte-affichable">Formation sur la synergie entre les normes ISO pour optimiser la gouvernance, la continuité d’activité et la qualité au sein d’un même système de management intégré.</div>
+  </li>
 
-  <div class="service-group">
-    <h3>🛡️ Conseil & cybersécurité</h3>
-    <ul>
-      <li>Implémentation de SMSI conformes à ISO/IEC 27001</li>
-      <li>Évaluation et traitement des risques selon ISO/IEC 27005</li>
-      <li>Audit de sécurité (interne / pré-certification ISO)</li>
-      <li>Mise en conformité réglementaire & RGPD</li>
-      <li>Accompagnement à la certification ISO/IEC 27001</li>
-    </ul>
-  </div>
+  <li>
+    <strong>Formations en Cybersécurité et conformité</strong>
+    <p class="paragraphe-cliquable">Sensibilisation à la cybersécurité pour les employés</p>
+    <div class="texte-affichable">Formation pratique visant à faire adopter des comportements sécurisés au quotidien par tous les collaborateurs.</div>
+    <p class="paragraphe-cliquable">Sécurité des SI pour non-informaticiens</p>
+    <div class="texte-affichable">Compréhension des enjeux, menaces et mesures de protection des systèmes d’information sans jargon technique.</div>
+    <p class="paragraphe-cliquable">Gestion des incidents de sécurité informatique</p>
+    <div class="texte-affichable">Processus et bonnes pratiques pour détecter, signaler, analyser et réagir face aux incidents de sécurité.</div>
+    <p class="paragraphe-cliquable">Cybercriminalité en entreprise : cadre juridique et gestion des risques (Algérie)</p>
+    <div class="texte-affichable">Cadre légal algérien en matière de cybercriminalité, responsabilités des entreprises, gestion des risques et plans de réponse.</div>
+    <p class="paragraphe-cliquable">Conformité réglementaire en cybersécurité (RGPD, législation algérienne)</p>
+    <div class="texte-affichable">Formation sur les obligations juridiques et réglementaires en matière de protection des données personnelles et de sécurité.</div>
+  </li>
 
-  <div class="service-group">
-    <h3>📋 Gestion de projets & transformation digitale</h3>
-    <ul>
-      <li>Gestion de projets IT (cycle en V, Agile, hybride)</li>
-      <li>Digitalisation des processus et stratégie Zéro Papier</li>
-      <li>Conduite du changement et coaching Agile</li>
-      <li>Élaboration de schémas directeurs & feuille de route IT</li>
-      <li>Implémentation de solutions GED, ERP, infrastructure hyperconvergée</li>
-    </ul>
-  </div>
+  <li>
+    <strong>Formation en Gestion de projet</strong>
+    <p class="paragraphe-cliquable">Fondamentaux de la gestion de projet</p>
+    <div class="texte-affichable">Introduction aux bonnes pratiques en matière de gestion de projet : cadrage, planification, exécution, clôture.</div>
+    <p class="paragraphe-cliquable">Gestion de projet IT : du cahier des charges à la recette</p>
+    <div class="texte-affichable">Formation complète sur la gestion du cycle de vie d’un projet informatique, de la conception à la livraison.</div>
+    <p class="paragraphe-cliquable">Méthodologies agiles (Scrum, Kanban, hybridation avec cycle en V)</p>
+    <div class="texte-affichable">Mise en œuvre des méthodes agiles dans différents contextes, avec des outils pratiques pour la gestion des sprints et la planification.</div>
+    <p class="paragraphe-cliquable">Pilotage et reporting projet (indicateurs, comitologie, gestion des risques)</p>
+    <div class="texte-affichable">Développement d’un pilotage efficace de projet avec tableaux de bord, indicateurs clés, gestion de la comitologie et du risque.</div>
+    <p class="paragraphe-cliquable">Gestion des parties prenantes et communication projet</p>
+    <div class="texte-affichable">Approche structurée pour identifier, impliquer et gérer les attentes des parties prenantes tout au long du projet.</div>
+    <p class="paragraphe-cliquable">Préparation à la certification PMP ou Prince2</p>
+    <div class="texte-affichable">Formation intensive pour maîtriser les référentiels PMI (PMP) et Prince2 et se préparer efficacement à la certification.</div>
+  </li>
 
-  <div class="service-group">
-    <h3>🎓 Formation & accompagnement</h3>
-    <ul>
-      <li>Cybersécurité & Systèmes de Management de la Sécurité de l’Information (SMSI)</li>
-<p>• ISO/IEC 27001 – Introduction à la norme et principes du SMSI</p>
-<p>• ISO/IEC 27001 – Implémentation d’un SMSI (formation Lead Implementer)</p>
-<p>• ISO/IEC 27001 – Audit d’un SMSI (formation Lead Auditor)</p>
-<p>• ISO/IEC 27005 – Gestion des risques liés à la sécurité de l'information</p>
-<p>• Intégration ISO 27001 / ISO 9001 / ISO 22301</p>
-<li>Sécurité opérationnelle</li>
-<p>• Sensibilisation à la cybersécurité pour les employés</p>
-<p>• Sécurité des systèmes d'information pour non-informaticiens</p>
-<p>• Gestion des incidents de sécurité informatique</p>
-<p>• Cybercriminalité en entreprise : cadre juridique et gestion des risques (en Algérie)</p>
-<p>• Rédaction d’une politique de sécurité de l'information (PSI)</p>
+  <li>
+    <strong>Formation en Transformation digitale et dématérialisation</strong>
+    <p class="paragraphe-cliquable">Transformation digitale et digitalisation des processus</p>
+    <div class="texte-affichable">Stratégies de transition numérique, identification des leviers de digitalisation et accompagnement des équipes.</div>
+    <p class="paragraphe-cliquable">Cartographie des processus et automatisation (BPMN, RPA)</p>
+    <div class="texte-affichable">Méthodologies et outils de modélisation des processus (BPMN) et automatisation avec les technologies RPA.</div>
+    <p class="paragraphe-cliquable">Dématérialisation des documents et GED</p>
+    <div class="texte-affichable">Implémentation de systèmes de gestion électronique de documents (GED) et de stratégies zéro papier.</div>
+    <p class="paragraphe-cliquable">Accompagnement du changement dans les projets digitaux</p>
+    <div class="texte-affichable">Méthodes de conduite du changement et coaching pour une transformation digitale réussie et durable.</div>
+  </li>
+</ul>
 
-<li>Gestion des risques & conformité</li>
-<p>• Analyse et gestion des risques (méthodes EBIOS RM, ISO 27005, MEHARI)</p>
-<p>• Conformité réglementaire en cybersécurité (RGPD, législation algérienne)</p>
-<p>• Cartographie des risques IT et élaboration d’un plan de traitement</p>
-<p>• Gouvernance de la sécurité de l'information</p>
-
-<li>Gestion de projet (classique et agile)</li>
-<p>• Fondamentaux de la gestion de projet</p>
-<p>• Gestion de projet IT (de la rédaction du cahier des charges à la recette)</p>
-<p>• Méthodologies agiles (Scrum, Kanban, hybridation avec cycle en V)</p>
-<p>• Pilotage et reporting projet (indicateurs, comitologie, gestion des risques)</p>
-<p>• Gestion des parties prenantes et communication projet</p>
-<p>• Préparation à la certification PMP ou Prince2</p>
-
-<li>Digitalisation & transformation numérique</li>
-<p>• Transformation digitale et digitalisation des processus</p>
-<p>• Cartographie des processus et automatisation (ex : outils BPMN, RPA)</p>
-<p>• Dématérialisation des documents et GED</p>
-<p>• Outils collaboratifs et pilotage digital des activités (ex : Trello, Notion, Odoo, etc.)</p>
-<p>• Accompagnement du changement dans les projets digitaux</p>
-
-<li>Formations spécifiques au contexte algérien</li>
-<p>• Cybersécurité : cadre juridique algérien (loi 18-07, loi sur la protection des données personnelles, etc.)</p>
-<p>• Transformation digitale dans les entreprises algériennes : enjeux et pratiques</p>
-<p>• Sensibilisation à la conformité des SI pour les entreprises locales</p>
-    </ul>
-  </div>
-</section>
-
-
-  <section class="contact">
+<section class="contact">
     <div style="display: flex; gap: 10px; align-items: center;">
 
   <!-- WhatsApp -->
@@ -232,6 +265,14 @@
   <footer>
     &copy; 2025 Merouane Tchikaoui. Tous droits réservés.
   </footer>
+<script>
+  document.querySelectorAll(".paragraphe-cliquable").forEach((el) => {
+    el.addEventListener("click", () => {
+      const content = el.nextElementSibling;
+      content.style.display = (content.style.display === "block") ? "none" : "block";
+    });
+  });
+</script>
 
 </body>
 </html>
